@@ -19,12 +19,10 @@ function cw_facebook_tags() {
         <meta property="og:url" content="<?php the_permalink() ?>" />
 
         <meta property="og:description" content="<?php
-//        $post = get_post($post);
-//        $content = substr($post->post_content, 0, 300);
-//        echo htmlspecialchars($content, ENT_COMPAT, 'ISO-8859-1', true);
-          
-        the_excerpt();
-        
+        $post = get_post($post);
+        $content = substr($post->post_content, 0, 300);
+        echo htmlspecialchars($content, ENT_COMPAT, 'ISO-8859-1', true);
+
         ?>" />
 
         <meta property="og:type" content="<?php
